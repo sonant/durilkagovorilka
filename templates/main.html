@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>=)</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="//vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
+	<script type=text/javascript src="{{  url_for('static', filename='js.js')  }}"></script>
+</head>
+<body style='text-align:center;padding-top:50px;' style='text-align:center;padding-top:50px;'>
+<form action="" method="post">
+   Телефон: <input type="text" name="phone_number">
+    Текст: <input type="text" name="message">
+    <button>SEND</button>
+</form>
+<p>
+Ваш баланс: {{ data.valet}}, Вы можете отправить {{ data.valet // 3}} голосовых сообщений. <a href="#" id="pay">Пополнить.</a>
+</p>
+</body>
+</html>
